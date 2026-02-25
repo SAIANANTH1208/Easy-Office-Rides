@@ -1,0 +1,131 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4A90E2 0%, #3065eb 100%); /* Blue gradient from image */
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.leftImage {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55%;
+  height: 100%;
+  background: url('/hero-bg.png') no-repeat left center;
+  background-size: cover;
+  /* Blend the image nicely into our blue background */
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  width: 45%;
+  padding-top: 40px;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.searchCard {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px 32px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.icon {
+  color: #3B71E8;
+  flex-shrink: 0;
+}
+
+.input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #333333;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.input::placeholder {
+  color: #9CA3AF;
+}
+
+.divider {
+  height: 1px;
+  background: #F3F4F6;
+  margin: 0 8px;
+}
+
+.bottomRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.dateWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.findBtn {
+  background: #3B71E8;
+  color: #ffffff;
+  border: none;
+  padding: 16px 36px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.findBtn:hover {
+  background: #2a5bd4;
+}
+
+@media (max-width: 1024px) {
+  .leftImage { display: none; }
+  .content { width: 100%; text-align: center; }
+  .searchCard { text-align: left; }
+  .title { font-size: 48px; }
+}
