@@ -1,0 +1,328 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/Header.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.Header_header__xuTiO {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 32px 0;
+  z-index: 100;
+}
+
+.Header_container__qRqis {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Header_spacer__0AV_V {
+  flex-grow: 1;
+}
+
+.Header_nav__NNkX_ {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.Header_navLink__encDI, .Header_loginBtn__WPTyu {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  transition: opacity 0.2s ease;
+}
+
+.Header_navLink__encDI:hover, .Header_loginBtn__WPTyu:hover {
+  opacity: 0.8;
+}
+
+.Header_signupBtn__yM0Yh {
+  background: #FDE047; /* Yellow from image */
+  color: #1A1A2E;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Header_signupBtn__yM0Yh:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(253, 224, 71, 0.3);
+}
+
+@media (max-width: 768px) {
+  .Header_nav__NNkX_ {
+    display: none;
+  }
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/dashboard/dashboard.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.dashboard_page__TZrNk {
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard_container__NwfBK {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 24px 60px; /* Top padding for fixed header */
+}
+
+.dashboard_welcomeSection__oo00n {
+  margin-bottom: 32px;
+}
+
+.dashboard_title__m1iWF {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #1a1a2e;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.dashboard_subtitle__tVn8u {
+  font-size: 16px;
+  color: #666;
+}
+
+.dashboard_sectionTitle__GM02B {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+/* Search Card Styles */
+.dashboard_searchCard__1pxDJ {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.dashboard_searchGrid__fsj3c {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr auto;
+  grid-gap: 16px;
+  gap: 16px;
+  align-items: center;
+}
+
+.dashboard_inputGroup__PH2Zw {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f8f9fa;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.dashboard_icon__sRtRF {
+  color: #3B71E8;
+  flex-shrink: 0;
+}
+
+.dashboard_input__O43cA {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+  color: #1a1a2e;
+}
+
+.dashboard_searchBtn__HzjRP {
+  background: #3B71E8;
+  color: #ffffff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.dashboard_searchBtn__HzjRP:hover {
+  background: #2563eb;
+}
+
+/* Rides List Styles */
+.dashboard_grid__uxJ2l {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.dashboard_card__yGBr4 {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+  border: 1px solid #f3f4f6;
+}
+
+.dashboard_card__yGBr4:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard_cardHeader__D79m7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.dashboard_driverInfo__1WbOG {
+  display: flex;
+  gap: 12px;
+}
+
+.dashboard_avatar__XqzUV {
+  width: 40px;
+  height: 40px;
+  background: #e0e7ff;
+  color: #3B71E8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.dashboard_driverName__LYOgv {
+  font-weight: 600;
+  color: #1a1a2e;
+  font-size: 15px;
+}
+
+.dashboard_vehicleInfo__kyj9i {
+  font-size: 12px;
+  color: #666;
+}
+
+.dashboard_price__f5oZZ {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.dashboard_route__mXPvy {
+  margin-bottom: 16px;
+  padding-left: 6px;
+}
+
+.dashboard_routeItem__uOf4z {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard_dot__bVGyE {
+  width: 8px;
+  height: 8px;
+  background: #3B71E8;
+  border-radius: 50%;
+}
+
+.dashboard_pinIcon__K4tns {
+  color: #e94560;
+  margin-left: -4px;
+}
+
+.dashboard_line__ArbH5 {
+  width: 2px;
+  height: 20px;
+  background: #e5e7eb;
+  margin: 4px 0 4px 3px;
+}
+
+.dashboard_location__nzCzq {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.dashboard_details__2r5K1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.dashboard_detailItem__v_nNT {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #666;
+}
+
+.dashboard_bookBtn__PhjqG {
+  width: 100%;
+  background: #ffffff;
+  color: #3B71E8;
+  border: 2px solid #3B71E8;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.dashboard_bookBtn__PhjqG:hover {
+  background: #3B71E8;
+  color: #ffffff;
+}
+
+.dashboard_loading__zctVA, .dashboard_empty__iTzWl {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  background: white;
+  border-radius: 12px;
+}
+
+.dashboard_emptyIcon__vHH_e {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .dashboard_searchGrid__fsj3c {
+    grid-template-columns: 1fr;
+  }
+  .dashboard_container__NwfBK {
+    padding: 80px 16px 40px;
+  }
+}
+

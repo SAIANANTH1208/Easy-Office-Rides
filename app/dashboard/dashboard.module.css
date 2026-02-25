@@ -1,0 +1,255 @@
+.page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 24px 60px; /* Top padding for fixed header */
+}
+
+.welcomeSection {
+  margin-bottom: 32px;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #1a1a2e;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.sectionTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+/* Search Card Styles */
+.searchCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.searchGrid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f8f9fa;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.icon {
+  color: #3B71E8;
+  flex-shrink: 0;
+}
+
+.input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+  color: #1a1a2e;
+}
+
+.searchBtn {
+  background: #3B71E8;
+  color: #ffffff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.searchBtn:hover {
+  background: #2563eb;
+}
+
+/* Rides List Styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+  border: 1px solid #f3f4f6;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.driverInfo {
+  display: flex;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #e0e7ff;
+  color: #3B71E8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.driverName {
+  font-weight: 600;
+  color: #1a1a2e;
+  font-size: 15px;
+}
+
+.vehicleInfo {
+  font-size: 12px;
+  color: #666;
+}
+
+.price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.route {
+  margin-bottom: 16px;
+  padding-left: 6px;
+}
+
+.routeItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #3B71E8;
+  border-radius: 50%;
+}
+
+.pinIcon {
+  color: #e94560;
+  margin-left: -4px;
+}
+
+.line {
+  width: 2px;
+  height: 20px;
+  background: #e5e7eb;
+  margin: 4px 0 4px 3px;
+}
+
+.location {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #666;
+}
+
+.bookBtn {
+  width: 100%;
+  background: #ffffff;
+  color: #3B71E8;
+  border: 2px solid #3B71E8;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.bookBtn:hover {
+  background: #3B71E8;
+  color: #ffffff;
+}
+
+.loading, .empty {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  background: white;
+  border-radius: 12px;
+}
+
+.emptyIcon {
+  color: #ccc;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .searchGrid {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    padding: 80px 16px 40px;
+  }
+}

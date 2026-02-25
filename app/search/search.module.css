@@ -1,0 +1,182 @@
+.page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding-top: 100px; /* Space for fixed header */
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #1a1a2e;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 16px;
+}
+
+.loading, .empty {
+  text-align: center;
+  padding: 60px 0;
+  color: #666;
+}
+
+.emptyIcon {
+  margin-bottom: 16px;
+  color: #ccc;
+}
+
+.backBtn {
+  display: inline-block;
+  margin-top: 20px;
+  color: #3B71E8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.driverInfo {
+  display: flex;
+  gap: 12px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background: #e0e7ff;
+  color: #3B71E8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.driverName {
+  font-weight: 600;
+  color: #1a1a2e;
+  font-size: 16px;
+}
+
+.vehicleInfo {
+  font-size: 13px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.route {
+  margin-bottom: 20px;
+  padding-left: 8px;
+}
+
+.routeItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #3B71E8;
+  border-radius: 50%;
+}
+
+.pinIcon {
+  color: #e94560;
+  margin-left: -3px; /* Align with dot */
+}
+
+.line {
+  width: 2px;
+  height: 24px;
+  background: #e5e7eb;
+  margin: 4px 0 4px 4px;
+}
+
+.location {
+  font-weight: 500;
+  color: #374151;
+}
+
+.details {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.bookBtn {
+  width: 100%;
+  background: #3B71E8;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.bookBtn:hover {
+  background: #2563eb;
+}
